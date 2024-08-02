@@ -1,0 +1,159 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Custom button styles */
+
+.btn-primary {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-primary:hover {
+    @apply bg-blue-700;
+}
+
+.btn-secondary {
+    @apply bg-gray-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-secondary:hover {
+    @apply bg-gray-700;
+}
+
+
+/* Custom form styles */
+
+.form-input {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+}
+
+.form-input:focus {
+    @apply outline-none ring-2 ring-blue-500;
+}
+
+
+/* Custom card styles */
+
+.card {
+    @apply bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4;
+}
+
+
+/* Animations */
+
+.fade-in {
+    @apply animate__animated animate__fadeIn;
+}
+
+.slide-in {
+    @apply animate__animated animate__slideInUp;
+}
+
+
+/* Responsive utilities */
+
+@screen sm {
+    .container {
+        @apply px-4;
+    }
+}
+
+@screen md {
+    .container {
+        @apply px-6;
+    }
+}
+
+@screen lg {
+    .container {
+        @apply px-8;
+    }
+}
+
+
+/* Custom alert styles */
+
+.alert-success {
+    @apply bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4;
+}
+
+.alert-danger {
+    @apply bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4;
+}
+
+
+/* Custom table styles */
+
+.table {
+    @apply w-full bg-white shadow-md rounded my-6;
+}
+
+.table th {
+    @apply py-3 px-6 bg-gray-200 font-bold uppercase text-sm text-gray-600 border-b border-gray-300;
+}
+
+.table td {
+    @apply py-3 px-6 border-b border-gray-300;
+}
+
+.table tr:hover {
+    @apply bg-gray-100;
+}
+
+
+/* Custom navigation styles */
+
+.nav-link {
+    @apply text-gray-300 hover: bg-gray-700 hover: text-white px-3 py-2 rounded-md text-sm font-medium;
+}
+
+.nav-link-active {
+    @apply bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium;
+}
+
+
+/* Custom modal styles */
+
+.modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center;
+}
+
+.modal-content {
+    @apply bg-white rounded-lg shadow-xl p-6 m-4 max-w-xl w-full;
+}
+
+
+/* Custom tooltip styles */
+
+.tooltip {
+    @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+    @apply visible z-50;
+}
+
+
+/* Custom badge styles */
+
+.badge {
+    @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2;
+}
+
+
+/* Custom progress bar styles */
+
+.progress {
+    @apply bg-gray-200 rounded-full h-2.5;
+}
+
+.progress-bar {
+    @apply bg-blue-600 h-2.5 rounded-full;
+}

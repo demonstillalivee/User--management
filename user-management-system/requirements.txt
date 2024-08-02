@@ -1,0 +1,39 @@
+# Server Dependencies
+express
+mongoose
+bcryptjs
+jsonwebtoken
+cors
+dotenv
+helmet
+morgan
+
+# Dev Dependencies
+typescript
+ts-node
+nodemon
+jest
+ts-jest
+supertest
+@types/express
+@types/mongoose
+@types/bcryptjs
+@types/jsonwebtoken
+@types/cors
+@types/morgan
+@types/jest
+@types/supertest
+
+# Client Dependencies
+react
+react-dom
+react-router-dom
+redux
+react-redux
+@reduxjs/toolkit
+axios
+formik
+yup
+tailwindcss
+postcss
+autoprefixer
